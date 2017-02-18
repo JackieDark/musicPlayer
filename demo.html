@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>musicPlayer</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+    </script>
+</head>
+<body>
+<div id="app">
+    <section class="searchBar">
+        <form action="#">
+            <input type="search" placeholder="搜索音乐、歌手、歌词、用户">
+            <input type="submit" value="搜索">
+            <input class="cancelSearch" type="button" value="取消">
+        </form>
+    </section>
+    <header>
+        <h2>那么骄傲</h2>
+        <p>徐薇&&周玥</p>
+    </header>
+    <section class="singer">
+        <div>
+            <img src="./images/xuwei.jpg" alt="徐薇">
+        </div>
+    </section>
+    <section class="topBtn">
+        <div class="love iconfont">&#xe60e;</div>
+        <div class="vice iconfont">&#xe60b;</div>
+        <div class="noVice iconfont">&#xe609;</div>
+        <div class="search iconfont">&#xe606;</div>
+    </section>
+    <section class="progress">
+        <div class="bg_progress"></div>
+        <div class="bar"></div>
+    </section>
+    <section class="btn">
+        <div class="loop listLoop iconfont">&#xe60a;</div>
+        <div class="loop randLoop iconfont">&#xe60d;</div>
+        <div class="loop singleLoop iconfont">&#xe608;</div>
+        <div class="prev iconfont">&#xe60c;</div>
+        <div class="play iconfont">&#xe60f;</div>
+        <div class="pause iconfont">&#xe607;</div>
+        <div class="next iconfont">&#xe611;</div>
+        <div class="list iconfont">&#xe610;</div>
+    </section>
+    <section class="musicList">
+        <h2>播放列表(3)<span class="noneList">A</span></h2>
+        <p>那么骄傲-徐薇&&周玥 <span>+</span></p>
+
+        <p>小幸运-徐薇 <span>+</span></p>
+
+        <p>放下-徐薇 <span>+</span></p>
+
+    </section>
+</div>
+<audio src="./mp3/那么骄傲.mp3"></audio>
+<script src="./js/jquery-3.1.0.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
